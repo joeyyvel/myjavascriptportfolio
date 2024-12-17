@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/8e493203fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/styleSection600px.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Rammetto+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="nav__links">
+        <li class="nav__link">
+          <a href="#section--1" class="nav__item">Home</a>
+        </li>
+        <li class="nav__link">
+          <a href="#section--2" class="nav__item">My Projects</a>
+        </li>
+        <li class="nav__link">
+          <a href="#section--3" class="nav__item">About Me</a>
+        </li>
+        <li class="nav__link">
+          <a href="#section--4" class="nav__item">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!---- Home ---->
+
+    <section class="section" id="section--1">
+      Main Page
+
+      <div class="JoeySection">
+        <div class="myPhoto">
+          <img src="/image/joey.jpg" alt="" id="joeyPhoto" />
+        </div>
+
+        <div class="parentIconLine">
+          <div class="iconLineOne">
+            <a href="https:www.github.com" target="_blank" style="color: white"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="iconLineOne">
+            <a
+              href="https:www.facebook.com"
+              target="_blank"
+              style="color: azure"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
+          <div class="iconLineOne">
+            <a
+              href="https:www.instagram.com"
+              target="_blank"
+              style="color: azure"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+          <div class="iconLineOne">
+            <a
+              href="https:www.linkedin.com"
+              target="_blank"
+              style="color: azure"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+
+          <div class="iconLineOne">
+            <a href="https:www.twitter.com" target="_blank" style="color: azure"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+          <div class="iconLineOne">
+            <a href="https:www.youtube.com" target="_blank" style="color: azure"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="paraIntro">
+          <div class="myIntro one">
+            <h1>
+              Hi!
+              <!--- Welcome Paragraph --->
+              <span class="paraWelcome">I Am</span>
+              <br />
+              <div class="paraWelcome" id="drop-name">
+                <div class="j">J</div>
+                <div class="o">o</div>
+                <div class="e">e</div>
+                <div class="y">y</div>
+                <div class="space">' '</div>
+                <div class="s">S</div>
+                <div class="a">a</div>
+                <div class="y2">y</div>
+                <div class="a2">a</div>
+                <div class="d">d</div>
+                <div class="i">i</div>
+              </div>
+            </h1>
+            <h4 class="paraIntroduction">
+              you can call me YEOJ, i am a Web Developer.
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--- My Projects --->
+    <div class="sectionTitle">Sample Projects</div>
+
+    <section class="section" id="section--2">
+      <!----slide container---->
+      <div class="projects--slideContainer">
+        <!---- Bank Area ---->
+        <div class="mySlides bank__Photo">
+          <h3 class="appTitle">Bank</h3>
+          <div class="bankPhoto">
+            <img src="/image/joeyBank.png" alt="bankPhoto" id="bankPhoto" />
+          </div>
+          <p id="appPara">
+            Mini bank App simply lets you withdraw, transfer, inquire, check
+            transaction history and change your personal pin on the machine.
+          </p>
+        </div>
+
+        <!---- Game Area ---->
+        <div class="mySlides game__Photo">
+          <h3 class="appTitle">Game</h3>
+          <div class="gamePhoto">
+            <img src="/image/gamePhoto.png" alt="gamePhoto" id="gamePhoto" />
+          </div>
+          <p id="appPara">
+            Dice game, a simple project that lets two players roll the Dice
+            consecutively and sum up the total to reach 100 points and win.
+          </p>
+        </div>
+
+        <!---- Hotel Area ---->
+        <div class="mySlides hotel__Photo">
+          <h3 class="appTitle">Hotel</h3>
+          <div class="hotelPhoto">
+            <img src="/image/hotel.png" alt="hotelPhoto" id="hotelPhoto" />
+          </div>
+          <p id="appPara">
+            Find the perfect place to stay at an amazing price. lets property
+            owners rent out their spaces to travelers looking for a place to
+            stay.
+          </p>
+        </div>
+
+        <!---- School Area ---->
+        <div class="mySlides school__Photo">
+          <h3 class="appTitle">School</h3>
+          <div class="schoolPhoto">
+            <img src="/image/school.png" alt="schoolPhoto" id="schoolPhoto" />
+          </div>
+          <p id="appPara">
+            School Registration App lets you register and be a member of
+            spongeBob community circle. still ongoing development...
+          </p>
+        </div>
+
+        <div class="center" style="width: 100%">
+          <div class="arrowParent">
+            <button class="arrow leftArrow" onclick="plusDivs(-1)">
+              &#10094;
+            </button>
+            <button class="arrow rightArrow" onclick="plusDivs(1)">
+              &#10095;
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--- My skills / About Me--->
+    <div class="sectionTitle">About Me</div>
+    <section class="section" id="section--3">
+      <div class="gallery-container">
+        <div class="gallery-divOne">
+          <div class="cardOne" style="background-color: rgb(91, 49, 131)">
+            <div class="mySkills">
+              <h3>Skills</h3>
+              <p>
+                <span
+                  ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                ></span>
+                Wordpress with Elementor drag and drop interface / HTML / CSS /
+                Javascript, BootStrap, vite-React Agnostic tools, ReactJS
+                javascript library, javascriptBabel, ReactVite-typescript,
+                tailwind, figma, AutoCAD -R14.
+              </p>
+              <p>
+                <span
+                  ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                ></span>
+                Knowledge in Java Core Programming, JavaSwing / JavaFX & C++
+                programming.
+              </p>
+              <p>
+                <span
+                  ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                ></span>
+                Knowledge in Linux System Administration.
+              </p>
+              <p>
+                <span
+                  ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                ></span>
+                Proficient with PC Compatibles (assembling, installation,
+                problem diagnostics and troubleshooting) Hard disks, CPU's,
+                Motherboards, expansion cards, printers, monitors, removables
+                drives, hubs and switches.
+              </p>
+            </div>
+          </div>
+
+          <!----------------------this section should be fixed ---------------->
+          <div class="cardTwo" style="background-color: rgb(92, 40, 40)">
+            <div class="gallery-experience">
+              <h3>Work Experience</h3>
+              <p>
+                <span
+                  ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                ></span>
+                Computer Operator / Exception Handler<br />
+                <em class="workPlace"
+                  >Abu Dhabi Terminals, Khalifa Port, United Arab Emirates</em
+                >
+                <p>Computer Operator – khalifa port Abu-dhabi UAE.
+                       <br>
+                  * Provided technical support to all computer users in the department.
+                  
+                  <br>* Responsible for the repair and maintenance of printers,     monitors, scanners all office electronics gadget and physical installation of RFID for customers   vehicles entering the automated port by using Navis Point system.</p>
+              </p>
+
+              <p>
+                <span
+                  ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                ></span>
+                Computer Operator / Accounting / EDP staff <br />
+                <em class="workPlace"
+                  >Bay't Al-Ansari , Dammam Kingdom of Saudi Arabia</em
+                >
+              </p>
+              <p>Assist all computer users in the department and   generate reports that needed by the management and   other department.
+                <br>
+                * assist accounting department for salary processing,
+                <br>
+                * keeping records of all company expenses and updates individual employee position and ranks by using scala system. </p>
+
+              <p>
+                <span
+                  ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                ></span>
+                I.T Support specialist (DELL Computers) <br />
+                <em class="workPlace">
+                  Stream Global Services, Eastwood City, Quezon City.</em
+                >
+              </p>
+              <p>* Provided technical support to all Dell computer users   around the world with special application tool to connect from Dell main office to clients remote location anywhere with the help of internet.
+                <br>
+                *Conducted hardware and software upgrades to all Dell     clients around the world and convince them to buy dell products to experience more satisfaction.
+              </p>
+
+              <p>
+                <span
+                  ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                ></span>
+                I.T Support specialist (Dish Network) <br />
+                <em class="workPlace"
+                  >SPI Global formerly ePLDT Ventus Systems Inc. Mandaluyong
+                  City</em
+                >
+              </p>
+               <p>
+                * Provided technical support to all Dish Network clients around the globe with special application tool to configure clients machine / hardware box.                                               
+                  <br>
+                 * Guiding and assisting Dish Network clients to install upgrades and persuade them to buy more Dish products to meet or exceed their needs.
+               </p>
+
+              <p>
+                <span
+                  ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                ></span>
+                Area Sales Supervisor <br />
+                (Area Handled: North Luzon Area, South Luzon and Greater manila Area)
+                <br />
+                 <p>
+                  *supervise more than hundred store sales specialist to generate    more sales and meet monthly quota.
+                 <br>
+                * Handled south luzon area / north luzon area / and greater manila area.  negotiate with store owners or managers for outright and consignment client. set a meetings with potential new triumph clients in the province.
+                 </p>
+                  
+   <!-------------------------- fix this section ------------------>
+                <!-- <span
+                  ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                ></span>
+                Sales Administration Clerk <br />
+                <em class="workPlace" 
+                  >Triumph International (Philippines) Inc. <br />
+                  3/f Alco Bldg. Sen. Gil Puyat Avenue, Makati City Phil.</em
+                >
+              </p>
+               <p>* generate all paper works that needed by the management.</p>
+ -->
+    <!-------------------------- fix this section ------------------->
+              
+                <p>
+                  <span
+                    ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                  ></span>
+                  Sales Administration Clerk <br>
+                  <em class="workPlace" 
+                  >Triumph International (Philippines) Inc. <br />
+                  3/f Alco Bldg. Sen. Gil Puyat Avenue, Makati City Phil.</em
+                >
+
+                <p>* generate all paper works that needed by the management.</p>
+
+                  
+                  <!-- <span
+                    ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                  ></span>
+                  Computer technician <br />
+                  <em class="workPlace"
+                    >Al-Rashid Computershop, san jose road, Zamboanga City.</em
+                  > -->
+                </p>                
+                <p>                               
+                 <!--------end of insertion -------->
+                
+                <span
+                  ><i class="fa-solid fa-arrow-right" style="color: red; margin-top: -50px;"></i
+                ></span>
+                Branch Sales Supervisor
+                <br />
+                <span
+                  ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                ></span>
+                Computer technician <br />
+                <em class="workPlace"
+                  >Al-Rashid Computershop, san jose road, Zamboanga City.</em
+                >
+              </p>
+              <p>
+                * Computer diagnostics, PC assembly and cater clients needs in the shop.
+                <br>
+                * in charge of sales PC hardware products.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-divTwo">
+          <div
+            class="cardThree"
+            style="background-color: darkgoldenrod; margin-bottom: 100px"
+          >
+            <div class="aboutMe">
+              <h3>Academic Education</h3>
+              <p>
+                <span
+                  ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                ></span>
+                Completed the five year course leading to the degree of Bachelor of Science in
+                Computer Engineering.                
+              </p>
+               <div style="text-align: center;"> 
+              <p>
+                Commission on Higher Education <br>
+                <span style="color:rgb(117, 231, 24); font-size: 16px; font-weight: bold; border-bottom: 2px solid greenyellow;"> Special Order No: 50-542202-2 </span> <br>
+                <br> <br>
+               degree earned from formerly MEIN College, inc. and now SOUTHERH CITY COLLEGES, san jose gusu, zamboanga city.
+
+               </p>
+              </div>
+              <p>
+
+              </p>
+            </div>
+          </div>
+
+          <div class="cardFour" style="background-color: rgb(114, 160, 69)">
+            <div class="divTraining">
+              <h3>I.T Trainings and Seminars Attended</h3>
+              <p>
+                <span
+                  ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                ></span>
+                Linux System Administration 101 and 102 <br />
+                <em class="school">
+                  -University of the Philippines information technology training
+                  center diliman, Quezon City.</em
+                >
+              </p>
+
+              <p>
+                <span
+                  ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                ></span>
+                Professional certification in information technology, computer
+                application programming Java Programming. <br />
+                <em class="school"> -Informatics Computer Institutes</em>
+              </p>
+
+              <p>
+                <span
+                  ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                ></span>
+                Computer-Aided Drafting & Design (CADD) course -AutoCAD R14-
+                <br />
+                <em class="school">
+                  -CADWays Engineering and Computer Technologies</em
+                >
+              </p>
+
+              <p>
+                <span
+                  ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                ></span>
+                PC Networking and Administration <br />
+                <em class="school">
+                  -Computer Networking Career & Training Center</em
+                >
+              </p>
+
+              <p>
+                <span
+                  ><i class="fa-solid fa-arrow-right" style="color: red"></i
+                ></span>
+                Computer Technician / PC Assembly and troubleshooting <br />
+                <em class="school">
+                  -St. Peter Technical Training Center Corp.</em
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---- Footer Section ---->
+    <div class="sectionTitle">Contact Me</div>
+    <section class="section" id="section--4">
+      <!---Footer Header-->
+      <div class="footerHead"></div>
+
+      <!--footer Mid-->
+      <div class="footerDiv">
+        <!--footer left side-->
+        <div class="footerLeft">
+          <div class="footerOne">
+            <img src="/image/myWeb.png" alt="webLogo" id="webLogo" />
+          </div>
+
+          <div class="footerTwo">
+            <div class="footerNav">
+              <h3 class="footBrowser">Browser</h3>
+              <br />
+              <ul class="nav__footer__links">
+                <li class="nav__footer__link">
+                  <a href="#section--1" class="footer__link">Home</a>
+                </li>
+                <li class="nav__footer__link">
+                  <a href="#section--2" class="footer__link">My Projects</a>
+                </li>
+                <li class="nav__footer__link">
+                  <a href="#section--3" class="footer__link">About Me</a>
+                </li>
+                <li class="nav__footer__link">
+                  <a href="#section--4" class="footer__link">Contact Me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--footer right side-->
+        <div class="footerRight">
+          <div class="footerThree">
+            <table>
+              <tr>
+                <th>Email:</th>
+                <td>joeyabaosayadi@gmail.com</td>
+              </tr>
+              <tr>
+                <th>Phone:</th>
+                <td>(+63) 945 586 7785</td>
+              </tr>
+              <tr>
+                <th>Address:</th>
+                <td>
+                  Block 8, Lot 6. BRIA Homes, Barrio Road Tayuman. Binangonan
+                  Rizal Philippines.
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="footerFour">
+            Email Sign-up form
+            <div>
+              <p>Body of Email Sign-up form</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footerBottom">
+        <div class="footbottom">
+          <p>Copyright &copy: 2024 joeyabaosayadi</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="joey.js"></script>
+  </body>
+</html>
